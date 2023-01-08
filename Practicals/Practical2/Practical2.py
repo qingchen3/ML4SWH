@@ -106,7 +106,7 @@ if __name__ == '__main__':
 
     # ----------------------------------------------------------------------
     print("Testing NBC for Binary values")
-    data = pd.read_csv('./binary_test.csv', header=None)
+    data = pd.read_csv('binary_test.csv', header=None)
     data = data.to_numpy()
 
     X = data[:, 1:]
@@ -139,7 +139,7 @@ if __name__ == '__main__':
     # ----------------------------------------------------------------------
 
     print("\nCompare NBC and lr on voting dataset")
-    voting = pd.read_csv('./voting.csv')
+    voting = pd.read_csv('voting.csv')
     voting = voting.dropna()
     voting.replace(('y', 'n'), (1, 0), inplace=True)
     voting.replace(('republican', 'democrat'), (1, 0), inplace=True)
