@@ -133,8 +133,8 @@ if __name__ == '__main__':
     nbc = NBC(feature_types=['r', 'r', 'r', 'r'])
     lr = LogisticRegression(random_state=0)
 
-    # tst_errs_nbc, tst_errs_lr = compareNBCvsLR(nbc, lr, X, y, num_runs=200, num_splits=10)
-    # makePlot(tst_errs_nbc, tst_errs_lr, title=None, num_splits=10)
+    tst_errs_nbc, tst_errs_lr = compareNBCvsLR(nbc, lr, X, y, num_runs=200, num_splits=10)
+    makePlot(tst_errs_nbc, tst_errs_lr, title=None, num_splits=10)
 
     # ----------------------------------------------------------------------
 
